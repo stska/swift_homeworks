@@ -42,9 +42,34 @@ print(array);
 array.removeAll( where: {$0 % 2 == 0 || $0%3 != 0 })
 print(array);
 
+//Task 5  . * Написать функцию, которая добавляет в массив новое число Фибоначчи, и добавить при помощи нее 100 элементов.
+var massive = [Int]();
 
-
-
+func fib (_ n: Int) -> () {
+    var n1: Int = 0
+    var n2: Int = 0
+    var sum:Int  = 1
+    
+    if n == 0 {
+        massive.append(n)
+        
+    } else if n == 1{
+        massive.append(n)
+        } else {
+        massive+=[0,1]
+        
+        for a in 1..<n-1 {
+            n1 = n2
+            n2 = sum
+            sum = n1 + n2
+            massive.append(sum)
+        }
+    
+      }
+    
+}
+print(fib(93));           //ne poluchaetsya dobavit 100, posle 94 chisla slishkom bolshie chtobi peremennaya mogla hranit' ih, data tape toje ne pomog, podjkajite, kak mojno sdelat'?
+print(massive);
 
 
 
