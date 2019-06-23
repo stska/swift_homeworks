@@ -7,6 +7,7 @@
 //
 
 import Foundation;
+
 //Task1. Написать функцию, которая определяет, четное число или нет.-----------------------------------------
 func findEvenNumber(number: Int) -> () {
     if(number%2 == 0 && number != 0){
